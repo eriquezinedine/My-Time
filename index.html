@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Time</title>
+    <link rel="shortcut icon" href="img/reloj.svg">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/CheckBox.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+<body>
+    <div class="tercero cajamobil">
+        <h2 style="text-align: center">Please Select<br>a goal</h2>
+    </div>
+    <section class="primero primeroOBS">
+        <div class="segundo">
+            <h1 id="segundo-titulo">EXCEED MY TIME</h1>
+            <h1 id="segundo-subtitulo">1200:0:0</h1>
+        </div>
+        <div class="contenedor1">
+            <div class="tercero">
+                <div class="titulo">
+                    <p>CHRONOMETER</p>
+                </div>
+                <div class="ContenedorTiempo">
+                    <div class="Contenedor-div feo">
+                        <p>
+                            <span id="segundos">0</span>
+                            <span class="letra">seconds</span>
+                        </p>
+                    </div>
+                    <div class="Contenedor-div one">
+                        <p>
+                            <span id="minutos">0</span>
+                            <span class="letra">minutes</span>
+                        </p>
+                    </div>
+                    <div class="Contenedor-div do">
+                        <p>
+                            <span id="horas">0</span>
+                            <span class="letra">hours</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="ContenedorBotones">
+                    <figure id="BtnPlay" class="Contenedor-Secundario-Media play" onclick="PlayComienza()">
+                        <img id="imagen-play" src="img/boton-de-play.png" alt="Boton-play">
+                    </figure>
+                    <figure id="BtnPause" class="Contenedor-Secundario-Media" onclick="GuardarCambios()">
+                        <img id="imagen-pause" src="img/pausa.png" alt="Boton-pause">
+                    </figure>
+                    <figure id="BtnReanudar" class="Contenedor-Secundario-Media reanudar">
+                        <img id="imagen-reanudar" src="img/restaurarRojo.png" alt="Boton-Reanudar">
+                    </figure>
+                </div>
+            </div>
+            <div class="cuarto">
+                <div class="quinto">
+                    <p>PURPOSE:</p>
+                    <form>
+                        <div class="multiselect">
+                            <div class="selectBox" onclick="showCheckboxes()">
+                                <select id="checkestilos">
+                                    <option>Select an Option</option>
+                                </select>
+                                <div class="overSelect"></div>
+                            </div>
+                            <div id="checkboxes">
+                                <label for="one">
+                                    <input type="checkbox" id="check1" onclick="onlyOne(this.id)" />Web Development</label>
+                                <label for="two">
+                                    <input type="checkbox" id="check2" onclick="onlyOne(this.id)" />Design</label>
+                                <label for="three">
+                                    <input type="checkbox" id="check3" onclick="onlyOne(this.id)" />Exercise</label>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- <label><input type="checkbox" id="cbox1" value="first_checkbox"> Desarrollo Web</label> -->
+                    <button id="BtnGuardarInfo">Guardar</button>
+                </div>
+                <div class="sexto">
+                    <div class="contenedor3">
+                        <div class="contenedor3-primero">
+                            <P>Web Development:</P>
+                            <h4 id="CDW"><span id="CDW-H">0</span>:<span id="CDW-M">0</span>:<span id="CDW-S">0</span>
+                            </h4>
+                        </div>
+                        <div class="contenedor3-segundo">
+                            <P>Design:</P>
+                            <h4 id="CD"><span id="CD-H">0</span>:<span id="CD-M">0</span>:<span id="CD-S">0</span></h4>
+                        </div>
+                        <div class="contenedor3-tercero">
+                            <P>Exercise:</P>
+                            <h4 id="CE"><span id="CE-H">0</span>:<span id="CE-M">0</span>:<span id="CE-S">0</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="septimo">
+                    <h1 id="segundo-subtitulo"><span id="TH">0</span>:<span id="TM">0</span>:<span id="TS">0</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="Js/ChecBoxapp.js"></script>
+    <script src="Js/app.js"></script>
+    <script src="Js/app2.js"></script>
+    <script src="Js/app3.js"></script>
+    <!-- <script src="Js/guardarDatos.js"></script> -->
+</body>
+</html>

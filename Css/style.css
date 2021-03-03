@@ -1,0 +1,326 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.primero{
+    position: relative;
+    width: 612px;
+    height: 312px;
+    border: 1.3px solid white;
+    background-color: #0F0D33;
+    border-radius: 50px 50px 0px 0px;
+    /* position: relative; */
+}
+
+.primeroOBS{
+    right:100px;
+    z-index: 0;
+}
+
+.corrector{
+    /*40*/
+    left: 37px;
+}
+
+.segundo{
+    width: 612px ;
+    height: 85px;
+    border-radius: 50px 50px 0px 0px;
+    /* width: 827px;
+    height: 85px;
+    border: 1px solid blue;
+    background-color: rgb(211, 164, 148);
+    z-index:1;
+    position: absolute; */
+}
+
+
+.tercero{
+    width: 272px ;
+    height: 227px;
+    border-top: 1.3px solid white;
+    border-right: 1.3px solid white;
+    /* width: 272px;
+    height: 227px;
+    border: 1px solid rgb(0, 255, 55);
+    background-color: rgb(203, 255, 80);
+    z-index:1;
+    position: absolute; */
+}
+
+.cuarto{
+    width: 340px ;
+    height: 227px;
+    border-top: 1px solid white;
+}
+
+.quinto{
+    width: 272px ;
+    height: 227px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*Contenedores*/
+
+.segundo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor1{
+    display: flex;
+}
+
+.ContenedorTiempo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.Contenedor-div p{
+    /* posicion */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Contenedor-div {
+    width: 77px;
+    height: 100%;
+    display: flex;
+    /* posicion */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.ContenedorBotones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/***************/
+
+/* Cronometro*/
+
+.titulo{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    text-justify: inter-cluster;
+}
+
+.ContenedorTiempo{
+    width: 100%;
+    height: 80px;
+
+}
+
+.ContenedorBotones{
+    width: 100%;
+    height: 80px;
+    border-top: 1.3px solid white;
+}
+
+#segundos,#minutos,#horas{
+    font-size: 25px;
+    color: white;
+}
+
+.Contenedor-Secundario-Media{
+    width: 50px;
+    height: 50px;
+    /* background-color:salmon; */
+    /* border: 1px solid red; */
+}
+
+/*Fuera del cronometro*/
+
+h1{
+    text-align:center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#segundo-subtitulo{
+    letter-spacing: 2px;
+}
+/***********************/
+
+
+
+/*datos*/
+.quinto{
+    width: 100%;
+    height: 65px;
+}
+
+.sexto{
+    width: 100%;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.3px solid white;
+}
+
+.septimo{
+    width: 100%;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1.3px solid white;
+}
+
+.contenedor3{
+    width: 242px;
+    height:96px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.contenedor3 > div{
+    width: 100%;
+    height:26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label{
+    font-size: 13px;
+    color: white;
+    -webkit-text-stroke: 0.2px #005D70;
+    text-shadow:0px 0px 10px #40f2f8,0px 0px 10px #40f2f8;
+    font-weight: 400;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0F0D33;
+    background-image: url(/img/fondoPrincipal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Botones Imagenes*/
+
+figure img{
+    width: 100%;
+    height: 100%;
+}
+
+#BtnGuardarInfo{
+    display: none;
+}
+
+/******************/
+
+.cajamobil{
+    position: relative;
+    left: 174px;
+    top: 43px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #0F0D33;
+    -webkit-text-stroke: 0.5px #08C5CF;
+    color: #40f2f8;
+    font-size: 20px;
+    font-weight: 100;
+    text-shadow:0px 0px 20px #40f2f8;
+    border-bottom: 1.3px solid white;
+}
+
+
+/*ESTO ES LINEAS EXTRAS*/
+.one::after{
+    content: "";
+    display: inline-block;
+    width: 1.3px;
+    height: 50px;
+    background: white;
+    position: relative;
+    left: 13px;
+}
+.do::after{
+    content: "";
+    display: inline-block;
+    width: 1.3px;
+    height: 50px;
+    background: white;
+    position: relative;
+    left: 20.5px;
+}
+
+/*Colores de las letras*/
+#horas,#minutos,#segundos{
+    -webkit-text-stroke: 0.5px #08C5CF;
+    color: #40f2f8;
+    font-size: 50px;
+    font-weight: 300;
+    text-shadow:0px 0px 20px #40f2f8,0px 0px 20px #40f2f8
+}
+
+#segundo-subtitulo{
+    -webkit-text-stroke: 0.5px #08C5CF;
+    color: #40f2f8;
+    font-weight:  400;
+    text-shadow:0px 0px 20px #40f2f8
+}
+
+#segundo-titulo{
+    -webkit-text-stroke: 0.2px #FE4467;
+    color: #FF2686;
+    font-weight:  400;
+    text-shadow:0px 0px 20px #ff3ec5
+}
+
+.Contenedor-div p .letra,.contenedor3-primero p,.contenedor3-segundo p,.contenedor3-tercero p{
+    color: white;
+    -webkit-text-stroke: 0.2px #005D70;
+    text-shadow:0px 0px 10px #40f2f8,0px 0px 10px #40f2f8;
+}
+
+.titulo, .quinto p{
+    -webkit-text-stroke: 0.2px #FE4467;
+    color: #FF2686;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: underline;
+    text-decoration:  1px  underline white;
+    text-shadow:0px 0px 10px #ff3ec5,0px 0px 10px #d696c3
+}
+
+#CDW, #CD, #CE{
+    -webkit-text-stroke: 0.5px #08C5CF;
+    color: #40f2f8;
+    font-weight: 400;
+    text-shadow:0px 0px 10px #40f2f8,0px 0px 10px #40f2f8
+}
+

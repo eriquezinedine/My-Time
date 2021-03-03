@@ -1,0 +1,47 @@
+.multiselect {
+  width: 150px;
+}
+
+.opcionesmultiples{
+  background-color:#0F0D33;
+}
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  font-weight: bold;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+  width: 150px;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+#checkestilos{
+  background: #0F0D33;
+  color: white;
+  -webkit-text-stroke: 0.2px #005D70;
+  text-shadow:0px 0px 10px #40f2f8,0px 0px 10px #40f2f8;
+  font-weight: 400;
+  border: 1.3px solid white;
+}
